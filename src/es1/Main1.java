@@ -13,16 +13,17 @@ public class Main1 {
         int N = sc.nextInt();
         Set<String> paroleSet = new HashSet<>();
         Set<String> paroleDuplicateSet = new HashSet<>();
+        String[] tutteLeParole = new String[N];
         for( int i = 0; i<N; i++){
             System.out.println("Inserisci la parola " + (i + 1)+ ":");
             String parola = sc.next();
-
+            tutteLeParole[i] = parola;
             if(!paroleSet.add(parola)){
                 paroleDuplicateSet.add(parola);
             }
         }
 
-        System.out.println("hai inserito le seguenti parole:");
+        System.out.println("hai inserito le seguenti parole(esclusi i duplicati):" );
         for (String parola:paroleSet) {
             System.out.print(parola + " ");
         }
@@ -31,6 +32,12 @@ public class Main1 {
         for (String parola:paroleDuplicateSet) {
             System.out.print(parola + " ");
         }
+        System.out.println(" ");
+        System.out.println("hai inserito "  + tutteLeParole.length + " parole (inclusi i duplicati):");
+        for (String parola:tutteLeParole) {
+            System.out.print(parola + " ");
+        }
         sc.close();
     }
 }
+
