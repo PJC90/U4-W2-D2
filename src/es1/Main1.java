@@ -23,12 +23,13 @@ public class Main1 {
                 paroleDuplicateSet.add(parola);
             }
         }
+        System.out.println("hai inserito le seguenti parole(esclusi i duplicati):" );
         System.out.println(paroleSet);
         System.out.println(paroleSet.size());
-        System.out.println("hai inserito le seguenti parole(esclusi i duplicati):" );
-        for (String parola:paroleSet) {
-            System.out.print(parola + " ");
-        }
+
+//        for (String parola:paroleSet) {
+//            System.out.print(parola + " ");
+//        }
         System.out.println(" ");
         System.out.println("hai inserito le seguenti parole duplicate:");
         for (String parola:paroleDuplicateSet) {
