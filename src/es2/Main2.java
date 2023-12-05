@@ -44,3 +44,11 @@ public class Main2 {
         System.out.println();
     }
 }
+
+//        ArrayList<Integer> myList = new ArrayList<>();
+//        myList.add(10);
+//        myList.add(20);
+//        myList.add(30);
+//
+//        int valueAtIndex1 = myList.get(1);
+//        System.out.println(valueAtIndex1); // Stampa: 20
