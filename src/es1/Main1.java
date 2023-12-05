@@ -18,11 +18,13 @@ public class Main1 {
             System.out.println("Inserisci la parola " + (i + 1)+ ":");
             String parola = sc.next();
             tutteLeParole[i] = parola;
+            //.add torna un booleano
             if(!paroleSet.add(parola)){
                 paroleDuplicateSet.add(parola);
             }
         }
-
+        System.out.println(paroleSet);
+        System.out.println(paroleSet.size());
         System.out.println("hai inserito le seguenti parole(esclusi i duplicati):" );
         for (String parola:paroleSet) {
             System.out.print(parola + " ");
